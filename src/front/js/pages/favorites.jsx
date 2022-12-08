@@ -6,7 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
-// import "../../styles/favorites.css";
+import "../../styles/favorites.css";
 
 export const Favorites = () => {
   const { store, actions } = useContext(Context);

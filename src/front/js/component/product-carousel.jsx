@@ -10,7 +10,7 @@ import {
   CarouselIndicators,
   CarouselControl,
 } from "reactstrap";
-// import "../../styles/carousel-products.css";
+import "../../styles/carousel-products.css";
 
 export const ProductCarousel = () => {
   const { store, actions } = useContext(Context);

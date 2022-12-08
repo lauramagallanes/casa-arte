@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import Nav from "react-bootstrap/Nav";
 
-// import "../../styles/favorites.css";
+import "../../styles/favorites.css";
 
 export const Carrito = () => {
   const { store, actions } = useContext(Context);

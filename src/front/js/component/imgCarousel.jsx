@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Carousel, CarouselItem, CarouselIndicators } from "reactstrap";
 
-// import "../../styles/imgCarousel.css";
+import "../../styles/imgCarousel.css";
 
 const items = [
   {

@@ -8,7 +8,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import logo from "../../img/logo1.png";
-// import "../../styles/navbar.css";
+import "../../styles/navbar.css";
 
 export const NavbarPrincipal = () => {
   const { store, actions } = useContext(Context);

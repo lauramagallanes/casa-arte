@@ -11,7 +11,7 @@ import Form from "react-bootstrap/Form";
 import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import Swal from "sweetalert2";
 import { GoAlert } from "react-icons/go";
-// import "../../styles/favorites.css";
+import "../../styles/favorites.css";
 
 export const Profile = (props) => {
   const { store, actions } = useContext(Context);
