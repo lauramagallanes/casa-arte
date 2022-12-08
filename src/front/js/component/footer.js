@@ -14,7 +14,7 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className=" bg-dark text-center text-white w-100 d-flex-inline align-items-end mt-100vh ">
+    <div className=" bg-dark text-center text-white w-100 d-flex-inline align-items-end mt-100vh ">
       <div className="p-4 pb-0 ">
         <section className="mb-4 col-3 d-flex justify-content-between mx-auto">
           <FacebookShareButton url={"https://casaarte.herokuapp.com"}>
@@ -71,6 +71,6 @@ export const Footer = () => {
       >
         © 2022 Copyright: Casa Arte
       </div>
-    </footer>
+    </div>
   );
 };
