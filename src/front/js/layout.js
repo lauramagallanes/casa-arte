@@ -1,11 +1,23 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
+import "../styles/home.css";
 
 import { Home } from "./pages/home";
-import { Demo } from "./pages/demo";
-import { Single } from "./pages/single";
+// import { Demo } from "./pages/demo";
+// import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
+
+import { ProductDetail } from "./pages/details.jsx";
+import { Login } from "./pages/login.jsx";
+import { SignUp } from "./pages/signup.jsx";
+import { Favorites } from "./pages/favorites.jsx";
+import { Profile } from "./pages/profile.jsx";
+import { Carrito } from "./pages/carrito.jsx";
+import { ContactUs } from "./pages/contactus.jsx";
+import { SubirImagenes } from "./pages/images.jsx";
+import { Checkout } from "./pages/checkout.jsx";
+import { ChangePassword } from "./pages/changePassword.jsx";
 
 import { NavbarPrincipal } from "./component/navbar.js";
 import { Footer } from "./component/footer.js";
@@ -17,14 +29,24 @@ const Layout = () => {
   const basename = process.env.BASENAME || "";
 
   return (
-    <div>
+    <div id="layout">
       <BrowserRouter basename={basename}>
         <ScrollToTop>
           <NavbarPrincipal />
           <Routes>
             <Route element={<Home />} path="/" />
-            <Route element={<Demo />} path="/demo" />
-            <Route element={<Single />} path="/single/:theid" />
+            {/* <Route element={<Demo />} path="/demo" />
+            <Route element={<Single />} path="/single/:theid" /> */}
+            <Route element={<Login />} path="/login" />
+            <Route element={<SignUp />} path="/signup" />
+            <Route element={<ContactUs />} path="/contactus" />
+            <Route element={<Favorites />} path="/favorites" />
+            <Route element={<Carrito />} path="/carrito" />
+            <Route element={<Checkout />} path="/checkout" />
+            <Route element={<ChangePassword />} path="/changePassword" />
+            <Route element={<ProductDetail />} path="/product-detail/:id" />
+            <Route element={<Profile />} path="/profile" />
+            <Route element={<SubirImagenes />} path="/upload-img" />
             <Route element={<h1>Not found!</h1>} />
           </Routes>
           <Footer />

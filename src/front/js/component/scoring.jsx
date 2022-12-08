@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Context } from "../store/appContext";
 import { useParams, useNavigate } from "react-router-dom";
-import "../../styles/scoring.css";
+// import "../../styles/scoring.css";
 import Swal from "sweetalert2";
 
 export const Scoring = (props) => {
