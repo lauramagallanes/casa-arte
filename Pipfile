@@ -22,6 +22,7 @@ flask-jwt-extended = "*"
 flask-mail = "*"
 install = "*"
 flask-bcrypt = "*"
+importlib-metadata = "*"
 
 [requires]
 python_version = "3.10"
