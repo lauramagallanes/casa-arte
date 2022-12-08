@@ -1,0 +1,16 @@
+@media only screen and (min-width: 200px) {
+    .itemCards {
+        width: 14rem !important;
+        font-size: 0.8rem !important;
+        justify-content: center !important;
+        margin: auto !important;
+        margin-top: 3% !important;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .itemCards {
+        width: 18rem !important;
+        font-size: 1rem !important;
+    }
+}
